@@ -1,20 +1,18 @@
 #include<iostream>
 using namespace std;
 int main(void){
-    int n,i;
-    cin>>n;
-    string s;
-
+    int n,i,k,counter=0;
+    cin>>n>>k;
+    int a[n];
     for(i=0;i<n;i++){
-        cin>>s;
-        int size = s.size();
-        if(size<=10){
-            cout<<s;
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++){
+        if(a[i]>=a[k-1] && a[i]>0){
+            counter++;
         }
-        else{
-            cout<<s[0]<<size-2<<s[size-1];
-        }
-        }
- 
+    }
+    cout<<counter;
+
     return 0;
 }
