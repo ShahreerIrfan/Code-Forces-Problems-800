@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
+int mian(){
     int flag = 0;
     int n,k;
     cin>>n>>k;
@@ -9,7 +9,7 @@ int main(){
         cin>>arr[i];
     }
     for(int i=0;i<n;i++){
-        if(arr[k]<=arr[i] && arr[i] !=0 ){
+        if(arr[k]<=arr[i]){
             flag++;
         }
     }
