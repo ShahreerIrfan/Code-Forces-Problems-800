@@ -9,7 +9,7 @@ int main(){
         cin>>arr[i];
     }
     for(int i=0;i<n;i++){
-        if(arr[k]<=arr[i] && arr[i] !=0 ){
+        if(arr[k-1]<=arr[i] && arr[i] >0){
             flag++;
         }
     }
